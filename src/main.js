@@ -6,6 +6,8 @@ import router from './router'
 import { Header } from 'mint-ui'
 import './lib/mui/css/mui.min.css'
 import './lib/mui/css/icons-extra.css'
+import VueResource from 'vue-resource'
+Vue.use(VueResource)
 
 Vue.component(Header.name, Header)
 

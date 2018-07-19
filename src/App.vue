@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="container">
+  <div id="app">
     <mt-header fixed title="Vue项目"></mt-header>
     <nav class="mui-bar mui-bar-tab">
 			<router-link class="mui-tab-item" to="home">
@@ -19,7 +19,9 @@
 				<span class="mui-tab-label">搜索</span>
 			</router-link>
 		</nav>
-    <router-view></router-view>
+    <div class="container">
+			<router-view></router-view>
+		</div>
   </div>
 </template>
 
@@ -40,5 +42,6 @@ export default {
 <style>
 .container {
   padding-top: 40px;
+	padding-bottom: 50px;
 }
 </style>
