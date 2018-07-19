@@ -5,7 +5,7 @@
           <img :src="item.img" alt="">
         </mt-swipe-item>
     </mt-swipe>
-    <ul class="mui-table-view mui-grid-view mui-grid-9">
+    <ul class="mui-table-view mui-grid-view mui-grid-9 my-table">
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
               <span class="mui-icon mui-icon-home"></span>
               <div class="mui-media-body">Home</div></a></li>
@@ -24,9 +24,6 @@
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
               <span class="mui-icon mui-icon-phone"></span>
               <div class="mui-media-body">Phone</div></a></li>
-     
-              <span class="mui-icon mui-icon-more"></span>
-              <div class="mui-media-body">more</div></a></li>
     </ul>
   </div>
 </template>
@@ -69,6 +66,13 @@ export default {
       height: 100%;
     }
   }
+}
+.my-table.mui-table-view{
+  background-color: white;
+  border: 0;
+}
+.mui-grid-view.mui-grid-9 .mui-table-view-cell {
+  border: 0;
 }
 </style>
 
