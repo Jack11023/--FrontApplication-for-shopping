@@ -6,23 +6,20 @@
         </mt-swipe-item>
     </mt-swipe>
     <ul class="mui-table-view mui-grid-view mui-grid-9 my-table">
+      <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><router-link to="/home/newList">
+              <img src="../assets/images/nav_1.png" alt="">
+              <div class="mui-media-body">Home</div></router-link></li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-              <span class="mui-icon mui-icon-home"></span>
-              <div class="mui-media-body">Home</div></a></li>
-      <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-              <span class="mui-icon mui-icon-email"><span class="mui-badge">5</span></span>
+              <img src="../assets/images/nav_2.png" alt="">
               <div class="mui-media-body">Email</div></a></li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-              <span class="mui-icon mui-icon-chatbubble"></span>
-              <div class="mui-media-body">Chat</div></a></li>
-      <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-              <span class="mui-icon mui-icon-location"></span>
+              <img src="../assets/images/nav_4.png" alt="">
               <div class="mui-media-body">location</div></a></li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-              <span class="mui-icon mui-icon-search"></span>
+              <img src="../assets/images/nav_5.png" alt="">
               <div class="mui-media-body">Search</div></a></li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-              <span class="mui-icon mui-icon-phone"></span>
+              <img src="../assets/images/nav_6.png" alt="">
               <div class="mui-media-body">Phone</div></a></li>
     </ul>
   </div>
