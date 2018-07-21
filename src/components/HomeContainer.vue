@@ -37,7 +37,7 @@ export default {
   },
   methods: {
     getLunbos() {
-      this.$http.jsonp("http://localhost:9090/lunbo").then(res => {
+      this.$http.jsonp("lunbo").then(res => {
         this.imgs = res.body;
       });
     }
