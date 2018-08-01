@@ -1,10 +1,7 @@
 <template>
   <div>
-    <mt-swipe :auto="2000" class="home-swiper">
-        <mt-swipe-item class="swipe-item"  v-for="item in imgs" :key="item.img" >
-          <img :src="item.img" alt="">
-        </mt-swipe-item>
-    </mt-swipe>
+    <lunbo :imgs="imgs" :isfull="true"></lunbo>
+
     <ul class="mui-table-view mui-grid-view mui-grid-9 my-table">
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><router-link to="/home/newList">
               <img src="../../assets/images/nav_1.png" alt="">
@@ -26,6 +23,8 @@
 </template>
 
 <script>
+import lunbo from '@/components/public/lunbo'
+
 export default {
   data() {
     return {
@@ -41,29 +40,14 @@ export default {
         this.imgs = res.body;
       });
     }
+  },
+  components: {
+    lunbo
   }
 };
 </script>
 
 <style lang="less" scoped>
-.home-swiper {
-  height: 200px;
-  .swipe-item {
-    &:nth-child(1) {
-      background-color: red;
-    }
-    &:nth-child(2) {
-      background-color: blue;
-    }
-    &:nth-child(3) {
-      background-color: orange;
-    }
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-}
 .my-table.mui-table-view{
   background-color: white;
   border: 0;

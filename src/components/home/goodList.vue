@@ -63,7 +63,7 @@
     export default {
         methods: {
             goGoodListInfo(id) {
-                this.$router.push({ path: '/home/goodListInfo', query: { id }})
+                this.$router.push({ path: `/home/goodListInfo/${id}`})
             }
         }
     }

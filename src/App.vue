@@ -11,9 +11,10 @@
 				<span class="mui-icon mui-icon-contact"></span>
 				<span class="mui-tab-label">通讯录</span>
 			</router-link>
-			<router-link class="mui-tab-item" to="/shoppingCar">
+			<router-link class="mui-tab-item shopping-car" to="/shoppingCar">
 				<span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
 				<span class="mui-tab-label">购物车</span>
+				<div id="ball">0</div>
 			</router-link>
 			<router-link class="mui-tab-item" to="/search">
 				<span class="mui-icon mui-icon-search"></span>
@@ -80,5 +81,19 @@ html {
 .v-leave-active {
 	transition: all .5s ease;
 	position: absolute;
+}
+.shopping-car {
+	position: relative;
+}
+#ball {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: red;
+	position: absolute;
+	top: 0;
+	left : 70px;
+	color:white;
+	z-index: 999;
 }
 </style>
