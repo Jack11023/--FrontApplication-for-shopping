@@ -30,7 +30,7 @@
         }
     }
 </script>
-<style lang="scss" scoped>
+<style lang="less" scoped>
     ul {
         padding: 0;
         margin: 0;

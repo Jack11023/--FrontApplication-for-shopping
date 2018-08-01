@@ -7,19 +7,19 @@
     </mt-swipe>
     <ul class="mui-table-view mui-grid-view mui-grid-9 my-table">
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><router-link to="/home/newList">
-              <img src="../assets/images/nav_1.png" alt="">
+              <img src="../../assets/images/nav_1.png" alt="">
               <div class="mui-media-body">Home</div></router-link></li>
+      <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><router-link to="/home/photoList">
+              <img src="../../assets/images/nav_2.png" alt="">
+              <div class="mui-media-body">Photo</div></router-link></li>
+      <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><router-link to="/home/goodList">
+              <img src="../../assets/images/nav_4.png" alt="">
+              <div class="mui-media-body">GoodList</div></router-link></li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-              <img src="../assets/images/nav_2.png" alt="">
-              <div class="mui-media-body">Email</div></a></li>
-      <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-              <img src="../assets/images/nav_4.png" alt="">
-              <div class="mui-media-body">location</div></a></li>
-      <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-              <img src="../assets/images/nav_5.png" alt="">
+              <img src="../../assets/images/nav_5.png" alt="">
               <div class="mui-media-body">Search</div></a></li>
       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
-              <img src="../assets/images/nav_6.png" alt="">
+              <img src="../../assets/images/nav_6.png" alt="">
               <div class="mui-media-body">Phone</div></a></li>
     </ul>
   </div>
@@ -45,7 +45,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="less" scoped>
 .home-swiper {
   height: 200px;
   .swipe-item {

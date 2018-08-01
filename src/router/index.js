@@ -1,12 +1,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HomeContainer from '@/components/HomeContainer'
-import ShoppingCarContainer from '@/components/ShoppingCar'
-import SearchContainer from '@/components/Search'
-import ConcatContainer from '@/components/Concat'
-import HomenewListContainer from '@/components/HomenewListContainer'
-import newsInfo from '@/components/newsInfo'
-import { Swipe, SwipeItem } from 'mint-ui';
+
+import { Swipe, SwipeItem } from 'mint-ui'
+import '@/lib/mui/css/mui.min.css'
+
+import HomeContainer from '@/components/home/HomeContainer'
+import photoList from '@/components/home/photoList'
+import ShoppingCarContainer from '@/components/shoppingcar/ShoppingCar'
+import SearchContainer from '@/components/search/Search'
+import ConcatContainer from '@/components/concat/Concat'
+import HomenewListContainer from '@/components/home/HomenewListContainer'
+import newsInfo from '@/components/home/newsInfo'
+import goodList from '@/components/home/goodList'
+import goodListInfo from '@/components/home/goodListInfo'
 
 Vue.component(Swipe.name, Swipe);
 Vue.component(SwipeItem.name, SwipeItem);
@@ -42,6 +48,18 @@ export default new Router({
     {
       path: '/home/newsInfo/:id',
       component: newsInfo
+    },
+    {
+      path: '/home/photoList',
+      component: photoList
+    },
+    {
+      path: '/home/goodList',
+      component: goodList
+    },
+    {
+      path: '/home/goodListInfo/:id',
+      component: goodListInfo
     }
   ],
   linkActiveClass: 'mui-active'

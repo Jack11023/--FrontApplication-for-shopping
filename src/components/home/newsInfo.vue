@@ -9,7 +9,7 @@
    </div>
 </template>
 <script>
-    import comments from '@/components/comments'
+    import comments from '@/components/public/comments'
     export default {
         data() {
             return {

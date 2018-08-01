@@ -8,15 +8,21 @@ import router from './router'
 import './lib/mui/css/mui.min.css'
 import './lib/mui/css/icons-extra.css'
 
+import VuePreview from 'vue2-preview'
+Vue.use(VuePreview)
+
 import VueResource from 'vue-resource'
 Vue.use(VueResource)
 Vue.http.options.emulateJSON = true;
 Vue.http.options.root = 'http://localhost:9090/';
 
-import { Header,Button,Toast } from 'mint-ui'
-Vue.component(Button.name, Button)
-Vue.component(Header.name, Header)
-Vue.component(Toast.name, Toast)
+// import { Header,Button,Toast,Lazyload } from 'mint-ui'
+// Vue.component(Button.name, Button)
+// Vue.component(Header.name, Header)
+// Vue.component(Toast.name, Toast)
+// Vue.use(Lazyload)
+import mintUi from 'mint-ui'
+Vue.use(mintUi)
 
 Vue.filter('dateFormat',function(date,format = 'YYYY-MM-DD') {
   return new moment(date).format(format);
