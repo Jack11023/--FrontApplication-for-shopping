@@ -14,7 +14,7 @@
 			<router-link class="mui-tab-item shopping-car" to="/shoppingCar">
 				<span class="mui-icon mui-icon-extra mui-icon-extra-cart"></span>
 				<span class="mui-tab-label">购物车</span>
-				<div id="ball">0</div>
+				<div id="ball">{{ $store.getters.getAllCounts}}</div>
 			</router-link>
 			<router-link class="mui-tab-item" to="/search">
 				<span class="mui-icon mui-icon-search"></span>

@@ -22,7 +22,7 @@
                     </p>
                     <p>购买数量: <numbox @getCount="getSelectedCount" :max="goodsInfo.stock_quantity"></numbox></p>
                     <mt-button type="primary">立即购买</mt-button>
-                    <mt-button type="danger" @click="isShow=!isShow">加入购物车</mt-button>
+                    <mt-button type="danger" @click="addToCar">加入购物车</mt-button>
                 </div>
             </div>
         </div>
@@ -86,7 +86,16 @@ import numbox from '@/components/public/goodList_numbox'
             },
             getSelectedCount(count) {
                 this.selectedCount = count
-                console.log(this.selectedCount)
+            },
+            addToCar() {
+                this.isShow=!this.isShow
+                const goodsInfo = {
+                    id : this.id,
+                    count : this.selectedCount,
+                    price : this.goodsInfo.sell_price,
+                    selected : true
+                }
+                this.$store.commit('addToCar',goodsInfo)
             }
         },
         created() {
