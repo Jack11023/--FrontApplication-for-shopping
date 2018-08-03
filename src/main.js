@@ -80,8 +80,8 @@ const store = new Vuex.Store({
       var count = 0, sum = 0
       state.goodsInfo.forEach(function(item) {
         if(item.selected) {
-          count++
-          sum += item.price
+          count += item.count
+          sum += item.price*item.count
         }
       })
       return {

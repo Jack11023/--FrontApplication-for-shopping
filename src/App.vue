@@ -1,7 +1,10 @@
 <template>
-
   <div id="app">
-    <mt-header fixed title="Vue项目" class="header"></mt-header>
+    <mt-header fixed title="极速购" class="header">
+		<span  slot="left" @click="goback" v-show="isShow">
+			<mt-button icon="back">返回</mt-button>
+		</span>
+	</mt-header>
     <nav class="mui-bar mui-bar-tab footer">
 			<router-link class="mui-tab-item" to="/home">
 				<span class="mui-icon mui-icon-home"></span>
@@ -27,7 +30,6 @@
 			</transition>
 		</div>
   </div>
-
 </template>
 
 <script>
@@ -37,14 +39,28 @@ export default {
 	mounted() {
 		mui('body').on('tap','a',function(){document.location.href=this.href;});
 	},
-  data() {
-    return {
-      
-    }
-  },
-  methods:{
-    
-  },
+	created() {
+		this.isShow = this.$route.path == '/home' ? false : true
+	},
+	data() {
+		return {
+		isShow :false
+		}
+	},
+	methods:{
+		goback() {
+			this.$router.go(-1)
+		}
+	},
+	watch: {
+		'$route.path' : function(newVal) {
+			if(newVal == '/home') {
+				this.isShow = false
+			}else {
+				this.isShow = true
+			}
+		}
+	}
 }
 </script>
 
@@ -95,5 +111,8 @@ html {
 	left : 70px;
 	color:white;
 	z-index: 999;
+}
+header {
+	font-size: 25px;
 }
 </style>

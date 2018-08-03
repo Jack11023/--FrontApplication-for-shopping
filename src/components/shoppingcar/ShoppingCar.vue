@@ -66,14 +66,16 @@ import numbox from '@/components/public/shoppingCar_numbox'
                 this.$store.state.goodsInfo.forEach(function(item) {
                     ids.push(item.id)
                 })
+                if(ids.length === 0) 
+                return
                 this.$http.jsonp(`goods/shoppingCar/${ids.join(',')}`).then(res => {
                     this.shoppingInfo = res.body
                 })
             },
             remove(id,index) {
-                console.log(1)
                 this.shoppingInfo.splice(index,1)
                 this.$store.commit('deleteFromCar',id)
+                 this.selectedGoods = this.getAllSelected()
             },
             updateSelected(id) {
                 this.selected[id] = !this.selected[id]
