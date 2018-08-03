@@ -21,7 +21,7 @@
 <script>
     import moment from 'moment'
     import { Toast } from 'mint-ui'
-    import '@/lib/mui/css/mui.min.css'
+    import '@/lib/mui/css/mui.css'
 
     export default {
         data() {

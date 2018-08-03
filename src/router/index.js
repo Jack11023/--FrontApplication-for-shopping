@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import { Swipe, SwipeItem } from 'mint-ui'
-import '@/lib/mui/css/mui.min.css'
+import '@/lib/mui/css/mui.css'
 
 import HomeContainer from '@/components/home/HomeContainer'
 import photoList from '@/components/home/photoList'
