@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 极速购
 
 > A Vue.js project
@@ -193,3 +194,8 @@ mui('.mui-switch')['switch']()
 ```
 
 ### 2.methods中声明获取评论数据方法getComments,根据父组件传进来的id值和pageindex从后台接口获取数据,获取更多评论方法getMore,pageindex++,重新调用一次getComments方法,评论提交方法post,先提交到后台数据,更新本组件的comments,用Array的unshift方法在数组头添加评论对象
+=======
+# 一个购物网站待完善.....
+## 在项目目录下命令行运行 start
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+>>>>>>> 56610a3db1f7eb533a7d394c3e56ccf20742b8c4
